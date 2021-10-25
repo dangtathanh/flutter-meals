@@ -1,6 +1,7 @@
-import 'package:fluter_meals/category_item.dart';
-import 'package:fluter_meals/dummy_data.dart';
 import 'package:flutter/material.dart';
+
+import '../category_item.dart';
+import '../dummy_data.dart';
 
 class CategoriesScreen extends StatelessWidget {
   @override
@@ -14,6 +15,7 @@ class CategoriesScreen extends StatelessWidget {
         children: DUMMY_CATEGORIES
             .map(
               (e) => CategoryItem(
+                e.id,
                 e.title,
                 e.color,
               ),
